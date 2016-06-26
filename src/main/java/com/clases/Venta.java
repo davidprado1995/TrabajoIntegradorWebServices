@@ -23,6 +23,7 @@ public class Venta {
         this.costo = cantidad*prod.precioProducto;
         this.idpedido = idpedido;
         this.prod = prod;
+        
     }  
         
 }

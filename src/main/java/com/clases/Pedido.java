@@ -25,6 +25,7 @@ public class Pedido {
         for (int i = 0; i < ventas.size(); i++) {
             costoTotal=costoTotal+ventas.get(i).costo;
         }
+        
     }
     
     

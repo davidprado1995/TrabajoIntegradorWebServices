@@ -2,6 +2,5 @@ com\utils\DemoServer.class
 com\utils\DBConexion.class
 com\clases\Venta.class
 com\clases\Pedido.class
-com\test\Test.class
 com\clases\Producto.class
 com\webservices\trabajointegrador.class

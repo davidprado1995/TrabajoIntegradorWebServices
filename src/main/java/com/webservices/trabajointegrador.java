@@ -10,6 +10,7 @@ import com.clases.Producto;
 import com.google.gson.Gson;
 import com.utils.DBConexion;
 import com.utils.DemoServer;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -55,19 +56,17 @@ public class trabajointegrador {
         String prods=new Gson().toJson(listaProductos);
         return prods;
     }
-    
-        /**
+
+    /**
      * Web service operation
      */
-    @WebMethod(operationName = "agregarPedidoALaCola")
-    public String agregarPedidoALaCola(@WebParam(name = "jsonPedido") String jsonPedido) {
+    @WebMethod(operationName = "cargarALaCola")
+    public String cargarALaCola(@WebParam(name = "pedido") String pedido) {
         //TODO write your implementation code here:
-        DemoServer ds= new DemoServer();
-        ds.agregarACola(jsonPedido);
+        DemoServer ds = new DemoServer();
+        ds.agregarACola(pedido);
         return null;
     }
-
-
-
-  
+    
+    
 }
